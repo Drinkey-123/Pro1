@@ -1,0 +1,284 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="./js/111.js"></script>
+    <style>
+         *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+         }
+          html,body{
+       width: 100%;
+       height: 100%;
+        }
+                body {
+             /*background:url(./myimage/背景.jpg);*/
+             /*background-color:white;*/
+             background-color:#f2f2f2;
+            max-width:100%;
+            background-attachment: fixed;
+           background-size:cover;
+           background-size:100% 100%; 
+        }
+                 .header {
+            width:100%;
+            height:50px;
+           float:left;
+           margin:0;
+        }
+        .header-left {
+            width:4%;
+            height:50px;
+            float:left;
+            margin:0;
+            margin-left:20px;
+            padding-top:25px;
+            margin-top:15px;
+        }
+         .header_mid {
+            width:25%;
+            height:50px;
+           float:left;
+           margin:0;
+           text-align:left;
+           padding-top:20px;     
+           font-family:ZoomlaTangYin-A053;
+           /*font-family:ZoomlaJiangjies-A065;*/ 
+           font-weight:500; 
+           font-size:32px;
+           color:black;
+           
+            }
+        .header-right{
+            float:left;
+            width:40%;
+            height:50px;
+             margin:0;
+             /*background-color:blue;*/
+             /*padding-top:13px;*/
+        }
+        .header-right2{
+            float:left;
+            width:10%;
+            height:50px;
+             margin:0;
+             /*background-color:red;*/
+             padding-top:25px;
+        }
+         .header-right3{
+            float:left;
+            width:5%;
+            height:50px;
+            /*margin-top:15px;*/
+             margin:0;
+             /*background-color:red;*/
+             padding-top:25px;
+        }
+        .a-one{
+            height:100%;
+            /*color:#e9f3fc;*/
+            color:black;
+            font-family:Garamond, serif;
+            font-size:15px;
+            /*margin-right:10px;*/
+        }
+        .a-one:hover{
+            color:#FF8C00;
+        }
+                .container {
+            width:100%;
+            height:600px;
+            /*background-color:chocolate;*/
+            border:0.5px solid black;
+            float:left;
+            margin-top:50px;
+            padding-left:15px;
+        }
+        .container-left {
+            width:26%;
+            height:443px;
+            float:left;
+            padding-top:15px;
+            /*margin-top:15px;*/
+        }
+        .container-right {
+            width:68%;
+            height:571px;
+            float:left;
+            /*padding-top:15px;*/
+            margin-left:25px;
+            /*background-color:white;*/
+        }
+        .container-right1 {
+            width:98%;
+            height:50px;
+            float:left;
+            position:relative;
+            margin-top:15px;
+            /*background-color:white;*/
+            /*padding-top:5px;*/
+            margin-left:60px;
+            /*border:1px solid white;*/
+            /*padding-left:200px;*/
+        }
+        .container-right2 {
+            width:98%;
+            height:70px;
+            float:left;
+            position:relative;
+            /*background-color:white;*/
+            /*padding-top:10px;*/
+            margin-top:10px;
+            margin-left:60px;
+            /*border:1px solid white;*/
+            padding-top:20px;
+        }
+        .container-right3 {
+            width:98%;
+            height:70px;
+            float:left;
+            position:relative;
+            /*background-color:white;*/
+            /*padding-top:10px;*/
+            margin-top:10px;
+            margin-left:60px;
+            /*border:1px solid white;*/
+            /*padding-left:200px;*/
+        }
+        .container-right4 {
+            width:98%;
+            height:70px;
+            float:left;
+            position:relative;
+            /*background-color:white;*/
+            /*padding-top:10px;*/
+            margin-top:10px;
+            margin-left:60px;
+            /*border:1px solid white;*/
+            /*padding-left:200px;*/
+        }
+        .container-right5 {
+            width:98%;
+            height:120px;
+            float:left;
+            position:relative;
+            /*background-color:white;*/
+            /*padding-top:10px;*/
+            margin-top:10px;
+            margin-left:60px;
+            /*border:1px solid white;*/
+            /*padding-left:200px;*/
+        }
+        h3 {
+            /*text-align:center;*/
+               color: black; 
+        }
+        #Text1 {
+            height: 28px;
+            width: 264px;
+        }
+    </style>
+</head>
+<body onload="load()">
+    <form id="form1" runat="server">
+    <div class="header">
+        <div class="header-left" style="background-image:url(./myimage/logo.png);
+             background-size:100% 100%;-moz-background-size:100% 100%;"></div>&nbsp;&nbsp;
+        <div class="header-left"></div>
+            <div class="header_mid">XXXX网</div>    
+            <div class="header-right" ><br />
+                <a class="a-one" href="xs.aspx">首页</a> &nbsp;&nbsp;
+                <a class="a-one" href="./gwc/111.html">购物车</a> &nbsp;&nbsp;
+<%--                <select class="a-one" style="border-style: none; border-color: inherit; border-width: medium; background: none; width: 78px;">
+                    <option style="border:none;background:none">收藏夹</option>
+                    <option style="border:none;background:none">收藏的宝贝</option>
+                    <option style="border:none;background:none">收藏的店铺</option>
+                </select>&nbsp;&nbsp;--%>
+                <%--<a class="a-one" href="javascript:">我的足迹</a> &nbsp;&nbsp;--%>
+                <a class="a-one" href="./fl/fl2.html">商品分类</a> &nbsp;&nbsp;
+                <select class="a-one" style="border-style: none; border-color: inherit; border-width: medium; background:none ; width: 90px;">
+                    <option style="border:none;background:none">卖家中心</option>
+                    <option style="border:none;background:none">免费开店</option>
+                    <%--<option style="border:none;background:none">已卖出的宝贝</option>
+                    <option style="border:none;background:none">出售中的宝贝</option>
+                    <option style="border:none;background:none">卖家服务市场</option>
+                    <option style="border:none;background:none">卖家培训中心</option>--%>
+                </select>&nbsp;&nbsp;
+                <a class="a-one" href="javascript:">联系客服</a> 
+                </div>
+        <div class="header-right2">
+            <asp:TextBox ID="TextBox1" runat="server" Height="32px" Width="129px" ></asp:TextBox>
+        </div >
+        <div class="header-right3"><asp:Button ID="Button1" runat="server" Text="搜索" Height="32px" Width="60px" /></div>            
+    </div>  
+        <div class="container">
+            <div class="container-left">
+                <img src="./myimage/dongliulaozao.png" style="height: 364px; width: 391px" />
+            </div>
+            <div class="container-right">
+                <div class="container-right1"><h3>窝窝酒酿醪糟米酒四川特产甜酒酿月子糯米酒农家自酿大瓶装818g</h3></div>
+                <div class="container-right2">商品价格：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23.9/罐</div>
+                <div class="container-right2">配送至：
+                    <select id="province" onchange='selPro(this)' >
+			<option>请选择省份</option>	
+		</select>
+		<select id="city" onchange='selCity(this)'>
+			<option>请选择城市</option>
+		</select>
+		<select id="area">
+			<option>请选择区</option>
+		</select>
+
+                    <input id="Text1" title="输入详细地址" type="text" value="请输入详细地址" /></div>
+                <div class="container-right2">数量：</div>
+                <div class="container-right2">
+                    <asp:Button runat="server" Height="52px" Width="244px" Text="立即购买" OnClick="Unnamed1_Click" />&nbsp;&nbsp;
+                    <asp:Button runat="server" Height="52px" Width="257px" Text="加入购物车"  OnClientClick="return confirm('成功加入购物车')" />
+                </div>
+            </div>
+        </div>
+        <script>
+            var pro = document.getElementById("province");
+            var city = document.getElementById("city");
+            var district = document.getElementById("area");
+            var index, index2, index3;
+
+
+            function load() {
+                var str = '<option>请选择省份</option>	';
+                for (var i in infos) {
+                    str = str + "<option id='province' value='" + i + "'>" + infos[i].name + "</option>";
+                }
+                pro.innerHTML = str;
+                console.log(pro);
+            }
+
+            function selPro(p) {
+                var str = '<option>请选择城市</option>';
+                index = parseInt(p.value);
+                for (i in infos[index].city) {
+                    str = str + "<option id='city' value='" + i + "'>" + infos[index].city[i].name + "</option>";
+                }
+                city.innerHTML = str;
+                district.innerHTML = '<option>请选择区</option>';
+            }
+
+            function selCity(c) {
+                var str = '<option>请选择区</option>';
+                index2 = parseInt(c.value);
+                for (i in infos[index].city[index2].area) {
+                    str = str + "<option id='area' value='" + i + "'>" + infos[index].city[index2].area[i].name + "</option>";
+                }
+                console.log(str);
+                district.innerHTML = str;
+            }
+
+        </script>
+    </form>
+</body>
+</html>
